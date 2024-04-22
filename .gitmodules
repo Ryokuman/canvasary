@@ -1,0 +1,6 @@
+[submodule "canvasary_front"]
+	path = canvasary_front
+	url = https://github.com/canvasary/canvasary_front.git
+[submodule "canvasary_back"]
+	path = canvasary_back
+	url = https://github.com/canvasary/canvasary_back.git
