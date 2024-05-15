@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: test
-        run: ls -al
+      - run: ls -al
+      - uses: actions/checkout@v4
 
       - name: mkdir
         run: mkdir test
