@@ -1,0 +1,30 @@
+version: "3"
+volumes:
+  build_folder: null
+
+services:
+  frontend:
+    build:
+      context: ./canvasary_front
+      args:
+        API_URL: "*"
+    environment:
+      - REACT_APP_BACKEND_URL=http://localhost:8000
+    volumes:
+      - ./canvasary_front/:/frontend
+      - build_folder:/frontend/build
+    tty: true
+
+  backend:
+    build: ./canvasary_back
+    command: "node main.js"
+    ports:
+      - "8080:8080"
+
+  nginx:
+    build: ./canvasary_nginx
+    ports:
+      - 80:80
+    volumes:
+      - build_folder:/var/www/frontend
+      - ./canvasary_nginx/log:/var/log/nginx

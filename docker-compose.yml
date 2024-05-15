@@ -1,0 +1,24 @@
+version: "3.8"
+volumes:
+  build_folder: null
+
+services:
+  frontend:
+    build:
+      context: ./canvasary_front
+      dockerfile: dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./canvasary_front/:/frontend
+    command: "yarn start"
+
+  backend:
+    build:
+      context: ./canvasary_back
+      dockerfile: dockerfile.dev
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./canvasary_back/:/backend
+    command: "yarn start:dev"

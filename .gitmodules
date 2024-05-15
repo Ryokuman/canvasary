@@ -4,3 +4,6 @@
 [submodule "canvasary_back"]
 	path = canvasary_back
 	url = https://github.com/canvasary/canvasary_back.git
+[submodule "canvasary_nginx"]
+	path = canvasary_nginx
+	url = https://github.com/Ryokuman/canvasary_nginx.git
