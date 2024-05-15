@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: test2
+      - name: test
         run: ls -al
 
-      - name: test2
-        run: sh /home/ubuntu/canvasary/deploy.sh
+      # - name: test2
+      #   run: sh /home/ubuntu/canvasary/deploy.sh
