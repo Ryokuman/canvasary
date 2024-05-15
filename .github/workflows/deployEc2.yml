@@ -1,0 +1,14 @@
+name: CI
+
+on:
+  push:
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: test
+        run: sh /home/ubuntu/srv/ubuntu/config/scripts/deploy.sh
