@@ -15,4 +15,4 @@ jobs:
       - run: pwd
 
       - name: test
-        run: sh /home/ubuntu/canvasary/deploy.sh
+        run: sh /home/runner/work/canvasary/canvasary/deploy.sh
