@@ -13,5 +13,11 @@ jobs:
       - name: test
         run: ls -al
 
+      - name: mkdir
+        run: mkdir test
+
+      - name: pwd
+        run: pwd
+
       # - name: test2
       #   run: sh /home/ubuntu/canvasary/deploy.sh
