@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: ls -al
       - uses: actions/checkout@v4
       - run: ls -al
+      - run: pwd
 
       - name: test
         run: sh /home/ubuntu/canvasary/deploy.sh
