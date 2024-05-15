@@ -13,7 +13,7 @@ jobs:
       - run: ls -al
       - uses: actions/checkout@v4
       - run: ls -al
-      - run: cat .github/workflows/checkout.yml
+      - run: cat .github/workflows/test.yml
 
       - name: mkdir
         run: mkdir test
