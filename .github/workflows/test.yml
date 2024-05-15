@@ -13,13 +13,6 @@ jobs:
       - run: ls -al
       - uses: actions/checkout@v4
       - run: ls -al
-      - run: cat .github/workflows/test.yml
 
-      - name: mkdir
-        run: mkdir test
-
-      - name: pwd
-        run: pwd
-
-      # - name: test2
-      #   run: sh /home/ubuntu/canvasary/deploy.sh
+      - name: test
+        run: sh /home/ubuntu/canvasary/deploy.sh
